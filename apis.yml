@@ -1,10 +1,12 @@
-name: MySQL API
+aid: mysql
+name: MySQL
 description: APIs and resources for MySQL database management
-image: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://www.mysql.com
-created: 2024-01-01 00:00:00+00:00
-modified: 2024-01-01 00:00:00+00:00
-specificationVersion: '0.18'
+created: '2024-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 tags:
 - database
 - SQL
@@ -14,84 +16,50 @@ tags:
 apis:
 - name: MySQL REST Service
   description: REST API for MySQL database operations
-  image: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
   humanURL: https://dev.mysql.com/doc/mysql-shell/en/mysql-shell-rest-service.html
-  baseURL: https://localhost:8443/
   tags:
   - REST
   - database operations
   properties:
   - type: Documentation
     url: https://dev.mysql.com/doc/mysql-shell/en/
-  - type: OpenAPI
-    url: https://dev.mysql.com/doc/mysql-shell/en/openapi-spec.html
-  contact:
-  - FN: MySQL Support
-    email: mysql-support@oracle.com
-    url: https://www.mysql.com/support/
 - name: MySQL X DevAPI
   description: Modern API for MySQL with CRUD operations and NoSQL capabilities
-  image: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
   humanURL: https://dev.mysql.com/doc/x-devapi-userguide/en/
-  baseURL: mysqlx://localhost:33060/
   tags:
   - DevAPI
   - NoSQL
   - CRUD
-  - document store
   properties:
   - type: Documentation
     url: https://dev.mysql.com/doc/x-devapi-userguide/en/
-  - type: Protocol Documentation
-    url: https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_MYSQLX_PROTOCOL.html
-  contact:
-  - FN: MySQL Support
-    email: mysql-support@oracle.com
-    url: https://www.mysql.com/support/
 - name: MySQL Connector APIs
   description: Native driver APIs for various programming languages
-  image: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
   humanURL: https://dev.mysql.com/doc/index-connectors.html
   tags:
   - connectors
   - drivers
-  - programming languages
   properties:
   - type: Documentation
     url: https://dev.mysql.com/doc/index-connectors.html
-  - type: Python Connector
-    url: https://dev.mysql.com/doc/connector-python/en/
-  - type: Node.js Connector
-    url: https://dev.mysql.com/doc/dev/connector-nodejs/
-  - type: Java Connector
-    url: https://dev.mysql.com/doc/connector-j/en/
-  - type: .NET Connector
-    url: https://dev.mysql.com/doc/connector-net/en/
-  contact:
-  - FN: MySQL Support
-    email: mysql-support@oracle.com
-    url: https://www.mysql.com/support/
 maintainers:
-- FN: Oracle Corporation
-  email: mysql-support@oracle.com
-  url: https://www.oracle.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 common:
 - type: Getting Started
   url: https://dev.mysql.com/doc/mysql-getting-started/en/
-- type: Documentation Portal
+- type: Documentation
   url: https://dev.mysql.com/doc/
-- type: Downloads
-  url: https://dev.mysql.com/downloads/
 - type: Community
   url: https://www.mysql.com/community/
 - type: Blog
   url: https://blogs.oracle.com/mysql/
-- type: GitHub
+- type: GitHub Organization
   url: https://github.com/mysql
-- type: Stack Overflow
-  url: https://stackoverflow.com/questions/tagged/mysql
 - type: Terms of Service
   url: https://www.mysql.com/about/legal/
 - type: Privacy Policy
   url: https://www.oracle.com/legal/privacy/
-include: []
