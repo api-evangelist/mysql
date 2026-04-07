@@ -1,6 +1,7 @@
 aid: mysql
 name: MySQL
-description: APIs and resources for MySQL database management
+description: >-
+  APIs and resources for MySQL database management.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://www.mysql.com
@@ -8,58 +9,65 @@ created: '2024-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.19'
 tags:
-- database
-- SQL
-- relational database
-- open source
-- RDBMS
+  - database
+  - SQL
+  - relational database
+  - open source
+  - RDBMS
 apis:
-- name: MySQL REST Service
-  description: REST API for MySQL database operations
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-  humanURL: https://dev.mysql.com/doc/mysql-shell/en/mysql-shell-rest-service.html
-  tags:
-  - REST
-  - database operations
-  properties:
-  - type: Documentation
-    url: https://dev.mysql.com/doc/mysql-shell/en/
-- name: MySQL X DevAPI
-  description: Modern API for MySQL with CRUD operations and NoSQL capabilities
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-  humanURL: https://dev.mysql.com/doc/x-devapi-userguide/en/
-  tags:
-  - DevAPI
-  - NoSQL
-  - CRUD
-  properties:
-  - type: Documentation
-    url: https://dev.mysql.com/doc/x-devapi-userguide/en/
-- name: MySQL Connector APIs
-  description: Native driver APIs for various programming languages
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-  humanURL: https://dev.mysql.com/doc/index-connectors.html
-  tags:
-  - connectors
-  - drivers
-  properties:
-  - type: Documentation
-    url: https://dev.mysql.com/doc/index-connectors.html
+  - name: MySQL REST Service
+    description: >-
+      REST API for MySQL database operations.
+    image: 
+      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: 
+      https://dev.mysql.com/doc/mysql-shell/en/mysql-shell-rest-service.html
+    tags:
+      - REST
+      - database operations
+    properties:
+      - type: Documentation
+        url: https://dev.mysql.com/doc/mysql-shell/en/
+  - name: MySQL X DevAPI
+    description: >-
+      Modern API for MySQL with CRUD operations and NoSQL capabilities.
+    image: 
+      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://dev.mysql.com/doc/x-devapi-userguide/en/
+    tags:
+      - DevAPI
+      - NoSQL
+      - CRUD
+    properties:
+      - type: Documentation
+        url: https://dev.mysql.com/doc/x-devapi-userguide/en/
+  - name: MySQL Connector APIs
+    description: >-
+      Native driver APIs for various programming languages.
+    image: 
+      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://dev.mysql.com/doc/index-connectors.html
+    tags:
+      - connectors
+      - drivers
+    properties:
+      - type: Documentation
+        url: https://dev.mysql.com/doc/index-connectors.html
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
 common:
-- type: Getting Started
-  url: https://dev.mysql.com/doc/mysql-getting-started/en/
-- type: Documentation
-  url: https://dev.mysql.com/doc/
-- type: Community
-  url: https://www.mysql.com/community/
-- type: Blog
-  url: https://blogs.oracle.com/mysql/
-- type: GitHub Organization
-  url: https://github.com/mysql
-- type: Terms of Service
-  url: https://www.mysql.com/about/legal/
-- type: Privacy Policy
-  url: https://www.oracle.com/legal/privacy/
+  - type: Getting Started
+    url: https://dev.mysql.com/doc/mysql-getting-started/en/
+  - type: Documentation
+    url: https://dev.mysql.com/doc/
+  - type: Community
+    url: https://www.mysql.com/community/
+  - type: Blog
+    url: https://blogs.oracle.com/mysql/
+  - type: GitHub Organization
+    url: https://github.com/mysql
+  - type: Terms of Service
+    url: https://www.mysql.com/about/legal/
+  - type: Privacy Policy
+    url: https://www.oracle.com/legal/privacy/
