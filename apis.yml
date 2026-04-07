@@ -9,47 +9,43 @@ created: '2024-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.19'
 tags:
-  - database
-  - SQL
-  - relational database
-  - open source
+  - Database
+  - Open Source
   - RDBMS
+  - Relational Database
+  - SQL
 apis:
   - name: MySQL REST Service
     description: >-
       REST API for MySQL database operations.
-    image: 
-      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: 
-      https://dev.mysql.com/doc/mysql-shell/en/mysql-shell-rest-service.html
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://dev.mysql.com/doc/mysql-shell/en/mysql-shell-rest-service.html
     tags:
+      - Database Operations
       - REST
-      - database operations
     properties:
       - type: Documentation
         url: https://dev.mysql.com/doc/mysql-shell/en/
   - name: MySQL X DevAPI
     description: >-
       Modern API for MySQL with CRUD operations and NoSQL capabilities.
-    image: 
-      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://dev.mysql.com/doc/x-devapi-userguide/en/
     tags:
+      - CRUD
       - DevAPI
       - NoSQL
-      - CRUD
     properties:
       - type: Documentation
         url: https://dev.mysql.com/doc/x-devapi-userguide/en/
   - name: MySQL Connector APIs
     description: >-
       Native driver APIs for various programming languages.
-    image: 
-      https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://dev.mysql.com/doc/index-connectors.html
     tags:
-      - connectors
-      - drivers
+      - Connectors
+      - Drivers
     properties:
       - type: Documentation
         url: https://dev.mysql.com/doc/index-connectors.html
