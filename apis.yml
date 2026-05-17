@@ -69,7 +69,7 @@ apis:
       - type: .NET
         url: https://dev.mysql.com/doc/connector-net/en/
 common:
-  - type: Getting Started
+  - type: GettingStarted
     url: https://dev.mysql.com/doc/mysql-getting-started/en/
   - type: Documentation
     url: https://dev.mysql.com/doc/
@@ -79,13 +79,13 @@ common:
     url: https://www.mysql.com/community/
   - type: Blog
     url: https://blogs.oracle.com/mysql/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/mysql
-  - type: Stack Overflow
+  - type: StackOverflow
     url: https://stackoverflow.com/questions/tagged/mysql
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.mysql.com/about/legal/
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.oracle.com/legal/privacy/
 maintainers:
   - FN: Kin Lane
