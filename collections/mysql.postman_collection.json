@@ -1,0 +1,489 @@
+{
+  "item": [
+    {
+      "id": "3688b25c-7e53-44df-b0b9-390209b9a104",
+      "name": "Authentication",
+      "description": {
+        "content": "MRS authentication endpoints (SCRAM and OAuth2).",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2e98b10c-8232-4aa1-817f-d6d5fa661573",
+          "name": "Authenticate against an MRS REST service (SCRAM)",
+          "request": {
+            "name": "Authenticate against an MRS REST service (SCRAM)",
+            "description": {
+              "content": "SCRAM-based authentication against MRS REST Service accounts.\nCredentials and challenge data are exchanged via JSON request body.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "authentication",
+                "login"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Configured MRS REST service path.",
+                  "type": "any",
+                  "value": "{{serviceName}}",
+                  "key": "serviceName"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"<string>\",\n  \"authApp\": \"<string>\",\n  \"nonce\": \"<string>\",\n  \"clientFirst\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "99211b74-cf45-45b1-bd8f-dbfe65ecf95c",
+              "name": "Authentication challenge or session established.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authentication",
+                    "login"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Configured MRS REST service path.",
+                      "type": "any",
+                      "value": "{{serviceName}}",
+                      "key": "serviceName"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"username\": \"<string>\",\n  \"authApp\": \"<string>\",\n  \"nonce\": \"<string>\",\n  \"clientFirst\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e647296d-6f33-4f8c-b619-473418b0afb5",
+              "name": "Authentication failed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authentication",
+                    "login"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Configured MRS REST service path.",
+                      "type": "any",
+                      "value": "{{serviceName}}",
+                      "key": "serviceName"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"username\": \"<string>\",\n  \"authApp\": \"<string>\",\n  \"nonce\": \"<string>\",\n  \"clientFirst\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "07d3d98e-ae8e-47ea-a10b-da173a43f4b4",
+          "name": "OAuth2 authentication redirect",
+          "request": {
+            "name": "OAuth2 authentication redirect",
+            "description": {
+              "content": "Initiates an OAuth2 vendor authentication flow (e.g. Facebook,\nGoogle, OCI). Returns a bearer token or sets a session cookie\ndepending on `sessionType`.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "authentication",
+                "login"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "authApp",
+                  "value": "<string>",
+                  "description": "(Required) Name of the configured OAuth2 authentication app."
+                },
+                {
+                  "disabled": false,
+                  "key": "sessionType",
+                  "value": "<string>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": [
+                {
+                  "description": "Configured MRS REST service path.",
+                  "type": "any",
+                  "value": "{{serviceName}}",
+                  "key": "serviceName"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3c5c347e-0306-46da-9ae5-33d138442d8d",
+              "name": "Authentication completed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authentication",
+                    "login"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "authApp",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "sessionType",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Configured MRS REST service path.",
+                      "type": "any",
+                      "value": "{{serviceName}}",
+                      "key": "serviceName"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "ac276c19-8c53-4236-b704-98e3e12a600f",
+              "name": "Redirect to the OAuth2 vendor.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authentication",
+                    "login"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "authApp",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "sessionType",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Configured MRS REST service path.",
+                      "type": "any",
+                      "value": "{{serviceName}}",
+                      "key": "serviceName"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Found",
+              "code": 302,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0dc427a9-4960-4115-b890-975a89ff661a",
+          "name": "Terminate the current MRS session",
+          "request": {
+            "name": "Terminate the current MRS session",
+            "description": {},
+            "url": {
+              "path": [
+                "authentication",
+                "logout"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Configured MRS REST service path.",
+                  "type": "any",
+                  "value": "{{serviceName}}",
+                  "key": "serviceName"
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0c7466b8-2167-4893-8409-6f392cfc4e92",
+              "name": "Session terminated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authentication",
+                    "logout"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Configured MRS REST service path.",
+                      "type": "any",
+                      "value": "{{serviceName}}",
+                      "key": "serviceName"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3051317a-438b-4a21-b4bb-2dd54b307559",
+          "name": "Inspect current authentication session status",
+          "request": {
+            "name": "Inspect current authentication session status",
+            "description": {},
+            "url": {
+              "path": [
+                "authentication",
+                "status"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Configured MRS REST service path.",
+                  "type": "any",
+                  "value": "{{serviceName}}",
+                  "key": "serviceName"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cf59758a-0fb8-4415-bd18-b9f526dccd71",
+              "name": "Session status payload.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "authentication",
+                    "status"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Configured MRS REST service path.",
+                      "type": "any",
+                      "value": "{{serviceName}}",
+                      "key": "serviceName"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Configured MRS REST service path.",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "myService",
+      "key": "serviceName"
+    },
+    {
+      "type": "string",
+      "value": "https://localhost:8443/{{serviceName}}",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "4ccb4b96-0266-43c4-9dd8-3f674925f08b",
+    "name": "MySQL REST Service (MRS) Runtime API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The MySQL REST Service exposes a runtime HTTP API for authenticating\nagainst MRS-managed services and OAuth2 vendors. This specification\ndocuments the fixed authentication endpoints. Dynamic data endpoints\nare generated at runtime per database schema and object, and are not\nenumerated here.\n",
+      "type": "text/plain"
+    }
+  }
+}

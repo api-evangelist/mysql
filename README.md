@@ -2,15 +2,13 @@
 
 MySQL is the world's most popular open-source relational database management system. This index covers the developer-facing APIs and interfaces for MySQL, including the MySQL REST Service, X DevAPI, and native connectors.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/mysql/refs/heads/main/apis.yml)
+**APIs.json:** [https://www.mysql.com](https://www.mysql.com)
 
 ## Scope
 
 - **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
 
-## Tags:
+## Tags
 
 - Database
 - Open Source
@@ -29,9 +27,9 @@ MySQL is the world's most popular open-source relational database management sys
 
 The MySQL REST Service (MRS) provides a RESTful interface for accessing MySQL databases. Endpoints are dynamically defined per database schema and table by the database administrator.
 
-**Human URL:** [https://dev.mysql.com/doc/dev/mysql-rest-service/latest/](https://dev.mysql.com/doc/dev/mysql-rest-service/latest/)
+- **Human URL:** [https://dev.mysql.com/doc/dev/mysql-rest-service/latest/](https://dev.mysql.com/doc/dev/mysql-rest-service/latest/)
 
-#### Tags:
+#### Tags
 
 - Database Operations
 - REST
@@ -39,14 +37,16 @@ The MySQL REST Service (MRS) provides a RESTful interface for accessing MySQL da
 #### Properties
 
 - [Documentation](https://dev.mysql.com/doc/dev/mysql-rest-service/latest/)
+- [Postman Collection](collections/mysql.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/mysql.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### MySQL X DevAPI
 
 Modern API for MySQL with CRUD operations and NoSQL document store capabilities, available across multiple language connectors.
 
-**Human URL:** [https://dev.mysql.com/doc/x-devapi-userguide/en/](https://dev.mysql.com/doc/x-devapi-userguide/en/)
+- **Human URL:** [https://dev.mysql.com/doc/x-devapi-userguide/en/](https://dev.mysql.com/doc/x-devapi-userguide/en/)
 
-#### Tags:
+#### Tags
 
 - CRUD
 - DevAPI
@@ -56,14 +56,16 @@ Modern API for MySQL with CRUD operations and NoSQL document store capabilities,
 
 - [Documentation](https://dev.mysql.com/doc/x-devapi-userguide/en/)
 - [Protocol](https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_MYSQLX_PROTOCOL.html)
+- [Postman Collection](collections/mysql.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/mysql.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### MySQL Connector APIs
 
 Native driver APIs for connecting applications to MySQL across multiple programming languages including Python, Node.js, Java, and .NET.
 
-**Human URL:** [https://dev.mysql.com/doc/index-connectors.html](https://dev.mysql.com/doc/index-connectors.html)
+- **Human URL:** [https://dev.mysql.com/doc/index-connectors.html](https://dev.mysql.com/doc/index-connectors.html)
 
-#### Tags:
+#### Tags
 
 - Connectors
 - Drivers
@@ -71,10 +73,12 @@ Native driver APIs for connecting applications to MySQL across multiple programm
 #### Properties
 
 - [Documentation](https://dev.mysql.com/doc/index-connectors.html)
-- [Python Connector](https://dev.mysql.com/doc/connector-python/en/)
-- [Node.js Connector](https://dev.mysql.com/doc/dev/connector-nodejs/)
-- [Java Connector](https://dev.mysql.com/doc/connector-j/en/)
-- [.NET Connector](https://dev.mysql.com/doc/connector-net/en/)
+- [Python](https://dev.mysql.com/doc/connector-python/en/)
+- [Node.js](https://dev.mysql.com/doc/dev/connector-nodejs/)
+- [Java](https://dev.mysql.com/doc/connector-j/en/)
+- [. N E T](https://dev.mysql.com/doc/connector-net/en/)
+- [Postman Collection](collections/mysql.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/mysql.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
@@ -91,5 +95,4 @@ Native driver APIs for connecting applications to MySQL across multiple programm
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com

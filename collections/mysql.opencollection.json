@@ -1,0 +1,79 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "MySQL REST Service (MRS) Runtime API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Authentication",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "OAuth2 authentication redirect",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://localhost:8443/{serviceName}/authentication/login",
+            "params": [
+              {
+                "name": "authApp",
+                "value": "",
+                "type": "query",
+                "description": "Name of the configured OAuth2 authentication app."
+              },
+              {
+                "name": "sessionType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Initiates an OAuth2 vendor authentication flow (e.g. Facebook,\nGoogle, OCI). Returns a bearer token or sets a session cookie\ndepending on `sessionType`.\n"
+        },
+        {
+          "info": {
+            "name": "Authenticate against an MRS REST service (SCRAM)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://localhost:8443/{serviceName}/authentication/login",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "SCRAM-based authentication against MRS REST Service accounts.\nCredentials and challenge data are exchanged via JSON request body.\n"
+        },
+        {
+          "info": {
+            "name": "Terminate the current MRS session",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://localhost:8443/{serviceName}/authentication/logout"
+          },
+          "docs": "Terminate the current MRS session"
+        },
+        {
+          "info": {
+            "name": "Inspect current authentication session status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://localhost:8443/{serviceName}/authentication/status"
+          },
+          "docs": "Inspect current authentication session status"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
