@@ -5,7 +5,7 @@ description: >-
   system. This index covers the developer-facing APIs and interfaces for
   MySQL, including the MySQL REST Service, X DevAPI, and native connectors.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://www.mysql.com
 created: '2024-01-01'
 modified: '2026-04-28'
@@ -23,7 +23,7 @@ apis:
       The MySQL REST Service (MRS) provides a RESTful interface for accessing
       MySQL databases. Endpoints are dynamically defined per database schema
       and table by the database administrator.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://dev.mysql.com/doc/dev/mysql-rest-service/latest/
     tags:
       - Database Operations
@@ -36,7 +36,7 @@ apis:
     description: >-
       Modern API for MySQL with CRUD operations and NoSQL document store
       capabilities, available across multiple language connectors.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://dev.mysql.com/doc/x-devapi-userguide/en/
     tags:
       - CRUD
@@ -52,7 +52,7 @@ apis:
     description: >-
       Native driver APIs for connecting applications to MySQL across multiple
       programming languages including Python, Node.js, Java, and .NET.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://dev.mysql.com/doc/index-connectors.html
     tags:
       - Connectors
