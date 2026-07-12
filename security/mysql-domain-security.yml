@@ -1,0 +1,18 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: dev.mysql.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 25 23:59:59 2026 GMT
+  hsts: null
+domains:
+- domain: mysql.com
+  dnssec: false
+  caa:
+  - 0 issue "digicert.com"
+  - 0 issue "symantec.com"
+  spf: false
+  dmarc: true
+  dmarc_policy: none

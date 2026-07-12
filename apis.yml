@@ -69,6 +69,10 @@ apis:
       - type: .NET
         url: https://dev.mysql.com/doc/connector-net/en/
 common:
+  - type: DomainSecurity
+    url: security/mysql-domain-security.yml
+  - type: Authentication
+    url: authentication/mysql-authentication.yml
   - type: GettingStarted
     url: https://dev.mysql.com/doc/mysql-getting-started/en/
   - type: Documentation

@@ -1,0 +1,23 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/mysql-openapi.yml
+summary:
+  types:
+  - apiKey
+  - http
+  api_key_in:
+  - cookie
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: Bearer token obtained from an MRS authentication flow.
+  sources:
+  - openapi/mysql-openapi.yml
+- name: cookieAuth
+  type: apiKey
+  in: cookie
+  parameter: session_id
+  description: Session cookie obtained from an MRS authentication flow.
+  sources:
+  - openapi/mysql-openapi.yml
