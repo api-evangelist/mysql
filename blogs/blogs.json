@@ -2,11 +2,10 @@
   "repo": "mysql",
   "feeds": [
     {
-      "source": "https://blogs.oracle.com/mysql/",
-      "saved": 0,
-      "error": "HTTP 403 Forbidden on blog listing"
+      "source": "https://www.mysql.com/community/",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:55:43Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 11
 }
