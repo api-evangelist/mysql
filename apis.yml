@@ -69,6 +69,8 @@ apis:
       - type: .NET
         url: https://dev.mysql.com/doc/connector-net/en/
 common:
+  - type: AgenticAccess
+    url: agentic-access/mysql-agentic-access.yml
   - type: DomainSecurity
     url: security/mysql-domain-security.yml
   - type: Authentication
