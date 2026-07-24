@@ -1,32 +1,40 @@
 openapi: 3.1.0
 info:
-  title: MySQL REST Service (MRS) Runtime API
-  description: |
-    The MySQL REST Service exposes a runtime HTTP API for authenticating
+  title: MySQL REST Service (MRS) Runtime Authentication API
+  description: 'The MySQL REST Service exposes a runtime HTTP API for authenticating
+
     against MRS-managed services and OAuth2 vendors. This specification
+
     documents the fixed authentication endpoints. Dynamic data endpoints
+
     are generated at runtime per database schema and object, and are not
+
     enumerated here.
+
+    '
   version: '1.0'
 servers:
-  - url: https://localhost:8443/{serviceName}
-    description: Default MySQL Router REST endpoint
-    variables:
-      serviceName:
-        default: myService
-        description: Configured MRS REST service path.
+- url: https://localhost:8443/{serviceName}
+  description: Default MySQL Router REST endpoint
+  variables:
+    serviceName:
+      default: myService
+      description: Configured MRS REST service path.
 security: []
 tags:
-  - name: Authentication
-    description: MRS authentication endpoints (SCRAM and OAuth2).
+- name: Authentication
+  description: MRS authentication endpoints (SCRAM and OAuth2).
 paths:
   /authentication/login:
     post:
-      tags: [Authentication]
+      tags:
+      - Authentication
       summary: Authenticate against an MRS REST service (SCRAM)
-      description: |
-        SCRAM-based authentication against MRS REST Service accounts.
+      description: 'SCRAM-based authentication against MRS REST Service accounts.
+
         Credentials and challenge data are exchanged via JSON request body.
+
+        '
       operationId: mrsLogin
       requestBody:
         required: true
@@ -53,26 +61,32 @@ paths:
         '401':
           description: Authentication failed.
     get:
-      tags: [Authentication]
+      tags:
+      - Authentication
       summary: OAuth2 authentication redirect
-      description: |
-        Initiates an OAuth2 vendor authentication flow (e.g. Facebook,
+      description: 'Initiates an OAuth2 vendor authentication flow (e.g. Facebook,
+
         Google, OCI). Returns a bearer token or sets a session cookie
+
         depending on `sessionType`.
+
+        '
       operationId: oauthLogin
       parameters:
-        - in: query
-          name: authApp
-          required: true
-          schema:
-            type: string
-          description: Name of the configured OAuth2 authentication app.
-        - in: query
-          name: sessionType
-          required: true
-          schema:
-            type: string
-            enum: [bearer, cookie]
+      - in: query
+        name: authApp
+        required: true
+        schema:
+          type: string
+        description: Name of the configured OAuth2 authentication app.
+      - in: query
+        name: sessionType
+        required: true
+        schema:
+          type: string
+          enum:
+          - bearer
+          - cookie
       responses:
         '302':
           description: Redirect to the OAuth2 vendor.
@@ -80,7 +94,8 @@ paths:
           description: Authentication completed.
   /authentication/logout:
     post:
-      tags: [Authentication]
+      tags:
+      - Authentication
       summary: Terminate the current MRS session
       operationId: mrsLogout
       responses:
@@ -88,7 +103,8 @@ paths:
           description: Session terminated.
   /authentication/status:
     get:
-      tags: [Authentication]
+      tags:
+      - Authentication
       summary: Inspect current authentication session status
       operationId: mrsAuthStatus
       responses:
