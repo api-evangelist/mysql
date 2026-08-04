@@ -1,0 +1,14 @@
+{
+  "provider": "mysql",
+  "sources": [
+    "mysql-authentication-api-openapi.yml"
+  ],
+  "outputs": [
+    "mysql-authentication-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

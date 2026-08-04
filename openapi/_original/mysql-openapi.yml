@@ -1,0 +1,111 @@
+openapi: 3.1.0
+info:
+  title: MySQL REST Service (MRS) Runtime API
+  description: |
+    The MySQL REST Service exposes a runtime HTTP API for authenticating
+    against MRS-managed services and OAuth2 vendors. This specification
+    documents the fixed authentication endpoints. Dynamic data endpoints
+    are generated at runtime per database schema and object, and are not
+    enumerated here.
+  version: '1.0'
+servers:
+  - url: https://localhost:8443/{serviceName}
+    description: Default MySQL Router REST endpoint
+    variables:
+      serviceName:
+        default: myService
+        description: Configured MRS REST service path.
+security: []
+tags:
+  - name: Authentication
+    description: MRS authentication endpoints (SCRAM and OAuth2).
+paths:
+  /authentication/login:
+    post:
+      tags: [Authentication]
+      summary: Authenticate against an MRS REST service (SCRAM)
+      description: |
+        SCRAM-based authentication against MRS REST Service accounts.
+        Credentials and challenge data are exchanged via JSON request body.
+      operationId: mrsLogin
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                authApp:
+                  type: string
+                nonce:
+                  type: string
+                clientFirst:
+                  type: string
+      responses:
+        '200':
+          description: Authentication challenge or session established.
+          content:
+            application/json:
+              schema:
+                type: object
+        '401':
+          description: Authentication failed.
+    get:
+      tags: [Authentication]
+      summary: OAuth2 authentication redirect
+      description: |
+        Initiates an OAuth2 vendor authentication flow (e.g. Facebook,
+        Google, OCI). Returns a bearer token or sets a session cookie
+        depending on `sessionType`.
+      operationId: oauthLogin
+      parameters:
+        - in: query
+          name: authApp
+          required: true
+          schema:
+            type: string
+          description: Name of the configured OAuth2 authentication app.
+        - in: query
+          name: sessionType
+          required: true
+          schema:
+            type: string
+            enum: [bearer, cookie]
+      responses:
+        '302':
+          description: Redirect to the OAuth2 vendor.
+        '200':
+          description: Authentication completed.
+  /authentication/logout:
+    post:
+      tags: [Authentication]
+      summary: Terminate the current MRS session
+      operationId: mrsLogout
+      responses:
+        '204':
+          description: Session terminated.
+  /authentication/status:
+    get:
+      tags: [Authentication]
+      summary: Inspect current authentication session status
+      operationId: mrsAuthStatus
+      responses:
+        '200':
+          description: Session status payload.
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Bearer token obtained from an MRS authentication flow.
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: session_id
+      description: Session cookie obtained from an MRS authentication flow.
