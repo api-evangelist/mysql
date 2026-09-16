@@ -1,9 +1,8 @@
 aid: mysql
 name: MySQL
-description: >-
-  MySQL is the world's most popular open-source relational database management
-  system. This index covers the developer-facing APIs and interfaces for
-  MySQL, including the MySQL REST Service, X DevAPI, and native connectors.
+description: MySQL is the world's most popular open-source relational database management system. This
+  index covers the developer-facing APIs and interfaces for MySQL, including the MySQL REST Service, X
+  DevAPI, and native connectors.
 type: Index
 deliveryModel:
   model: saas
@@ -34,26 +33,25 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mysql.png
 url: https://www.mysql.com
 created: '2024-01-01'
-modified: '2026-04-28'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 tags:
-  - Database
-  - Open-Source
-  - RDBMS
-  - Relational Database
-  - SQL
+- Database
+- Open-Source
+- RDBMS
+- Relational Database
+- SQL
 tags_raw:
-  - Database
-  - Open Source
-  - RDBMS
-  - Relational Database
-  - SQL
+- Database
+- Open Source
+- RDBMS
+- Relational Database
+- SQL
 apis:
 - aid: mysql:mysql-rest-service
   name: MySQL REST Service
-  description: >-
-    The MySQL REST Service (MRS) provides a RESTful interface for accessing MySQL databases. Endpoints
-    are dynamically defined per database schema and table by the database administrator.
+  description: The MySQL REST Service (MRS) provides a RESTful interface for accessing MySQL databases.
+    Endpoints are dynamically defined per database schema and table by the database administrator.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://dev.mysql.com/doc/dev/mysql-rest-service/latest/
   tags:
@@ -64,9 +62,8 @@ apis:
     url: https://dev.mysql.com/doc/dev/mysql-rest-service/latest/
 - aid: mysql:x-devapi
   name: MySQL X DevAPI
-  description: >-
-    Modern API for MySQL with CRUD operations and NoSQL document store capabilities, available across
-    multiple language connectors.
+  description: Modern API for MySQL with CRUD operations and NoSQL document store capabilities, available
+    across multiple language connectors.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://dev.mysql.com/doc/x-devapi-userguide/en/
   tags:
@@ -80,9 +77,8 @@ apis:
     url: https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_MYSQLX_PROTOCOL.html
 - aid: mysql:connectors
   name: MySQL Connector APIs
-  description: >-
-    Native driver APIs for connecting applications to MySQL across multiple programming languages including
-    Python, Node.js, Java, and .NET.
+  description: Native driver APIs for connecting applications to MySQL across multiple programming languages
+    including Python, Node.js, Java, and .NET.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://dev.mysql.com/doc/index-connectors.html
   tags:
@@ -109,30 +105,32 @@ apis:
   - type: OpenAPI
     url: openapi/mysql-authentication-api-openapi.yml
 common:
-  - type: AgenticAccess
-    url: agentic-access/mysql-agentic-access.yml
-  - type: DomainSecurity
-    url: security/mysql-domain-security.yml
-  - type: Authentication
-    url: authentication/mysql-authentication.yml
-  - type: GettingStarted
-    url: https://dev.mysql.com/doc/mysql-getting-started/en/
-  - type: Documentation
-    url: https://dev.mysql.com/doc/
-  - type: Downloads
-    url: https://dev.mysql.com/downloads/
-  - type: Community
-    url: https://www.mysql.com/community/
-  - type: Blog
-    url: https://blogs.oracle.com/mysql/
-  - type: GitHubOrganization
-    url: https://github.com/mysql
-  - type: StackOverflow
-    url: https://stackoverflow.com/questions/tagged/mysql
-  - type: TermsOfService
-    url: https://www.mysql.com/about/legal/
-  - type: PrivacyPolicy
-    url: https://www.oracle.com/legal/privacy/
+- type: Website
+  url: https://mysql.com
+- type: AgenticAccess
+  url: agentic-access/mysql-agentic-access.yml
+- type: DomainSecurity
+  url: security/mysql-domain-security.yml
+- type: Authentication
+  url: authentication/mysql-authentication.yml
+- type: GettingStarted
+  url: https://dev.mysql.com/doc/mysql-getting-started/en/
+- type: Documentation
+  url: https://dev.mysql.com/doc/
+- type: Downloads
+  url: https://dev.mysql.com/downloads/
+- type: Community
+  url: https://www.mysql.com/community/
+- type: Blog
+  url: https://blogs.oracle.com/mysql/
+- type: GitHubOrganization
+  url: https://github.com/mysql
+- type: StackOverflow
+  url: https://stackoverflow.com/questions/tagged/mysql
+- type: TermsOfService
+  url: https://www.mysql.com/about/legal/
+- type: PrivacyPolicy
+  url: https://www.oracle.com/legal/privacy/
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
