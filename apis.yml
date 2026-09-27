@@ -37,7 +37,7 @@ modified: '2026-09-16'
 specificationVersion: '0.23'
 tags:
 - Database
-- Open-Source
+- Open Source
 - RDBMS
 - Relational Database
 - SQL
@@ -47,6 +47,7 @@ tags_raw:
 - RDBMS
 - Relational Database
 - SQL
+- Open-Source
 apis:
 - aid: mysql:mysql-rest-service
   name: MySQL REST Service
