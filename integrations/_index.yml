@@ -159,7 +159,7 @@
       type: source
       lapsed: false
       cloud: true
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: mysql-fivetran
   label: Fivetran
@@ -185,7 +185,7 @@
     - connectors/databases/mysql
     vendor_link: https://www.mysql.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: mysql-meltano
   label: Meltano
@@ -222,5 +222,5 @@
     - silver
     - unknown
     builder: 'community (Meltano Hub variant maintainers: airbyte, meltanolabs, singer-io, thkwag, transferwise)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
