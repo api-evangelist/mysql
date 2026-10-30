@@ -1,4 +1,4 @@
-# MySQL (mysql)
+# MySQL
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,97 +66,122 @@
 
 MySQL is the world's most popular open-source relational database management system. This index covers the developer-facing APIs and interfaces for MySQL, including the MySQL REST Service, X DevAPI, and native connectors.
 
-**APIs.json:** [https://www.mysql.com](https://www.mysql.com)
+**Areas:** Database · Open Source · RDBMS · Relational Database · SQL
 
-## Scope
+## MySQL on APIs.io
 
-- **Type:** Index
+Everything profiled for MySQL is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mysql/](https://apis.io/providers/mysql/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Database
-- Open Source
-- RDBMS
-- Relational Database
-- SQL
+- [MySQL REST Service](https://apis.io/apis/mysql/mysql-rest-service/) — The MySQL REST Service (MRS) provides a RESTful interface for accessing MySQL databases. Endpoints are dynamically defined per database schema and table by…
+- [MySQL X DevAPI](https://apis.io/apis/mysql/x-devapi/) — Modern API for MySQL with CRUD operations and NoSQL document store capabilities, available across multiple language connectors.
+- [MySQL Connector APIs](https://apis.io/apis/mysql/connectors/) — Native driver APIs for connecting applications to MySQL across multiple programming languages including Python, Node.js, Java, and .NET.
+- [MySQL Authentication API](https://apis.io/apis/mysql/mysql-authentication-api/) — MRS authentication endpoints (SCRAM and OAuth2).
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### MySQL REST Service
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The MySQL REST Service (MRS) provides a RESTful interface for accessing MySQL databases. Endpoints are dynamically defined per database schema and table by the database administrator.
+- [Mysql Agentic Access](https://apis.io/agentic-access/mysql/mysql-agentic-access/)
 
-- **Human URL:** [https://dev.mysql.com/doc/dev/mysql-rest-service/latest/](https://dev.mysql.com/doc/dev/mysql-rest-service/latest/)
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Database Operations
-- REST
+- [MySQL REST Service (MRS) Runtime API](https://apis.io/collections/mysql/open-mysql/)
+- [MySQL REST Service (MRS) Runtime Authentication API](https://apis.io/collections/mysql/open-mysql-authentication-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://dev.mysql.com/doc/dev/mysql-rest-service/latest/)
-- [Postman Collection](collections/mysql.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/mysql.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### MySQL X DevAPI
+- [Mysql Authentication](https://apis.io/security/mysql/mysql-authentication/)
+- [Mysql Domain Security](https://apis.io/security/mysql/mysql-domain-security/)
 
-Modern API for MySQL with CRUD operations and NoSQL document store capabilities, available across multiple language connectors.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://dev.mysql.com/doc/x-devapi-userguide/en/](https://dev.mysql.com/doc/x-devapi-userguide/en/)
+Published plans, tiers and prices.
 
-#### Tags
+- [Mysql Plans Pricing](https://apis.io/plans/mysql/mysql-plans-pricing/)
 
-- CRUD
-- DevAPI
-- NoSQL
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://dev.mysql.com/doc/x-devapi-userguide/en/)
-- [Protocol](https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_MYSQLX_PROTOCOL.html)
-- [Postman Collection](collections/mysql.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/mysql.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Mysql Rate Limits](https://apis.io/rate-limits/mysql/mysql-rate-limits/)
 
-### MySQL Connector APIs
+#### FinOps (1)
 
-Native driver APIs for connecting applications to MySQL across multiple programming languages including Python, Node.js, Java, and .NET.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://dev.mysql.com/doc/index-connectors.html](https://dev.mysql.com/doc/index-connectors.html)
+- [Mysql Finops](https://apis.io/finops/mysql/mysql-finops/)
 
-#### Tags
+## Where to find this API
 
-- Connectors
-- Drivers
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Properties
-
-- [Documentation](https://dev.mysql.com/doc/index-connectors.html)
-- [Python](https://dev.mysql.com/doc/connector-python/en/)
-- [Node.js](https://dev.mysql.com/doc/dev/connector-nodejs/)
-- [Java](https://dev.mysql.com/doc/connector-j/en/)
-- [. N E T](https://dev.mysql.com/doc/connector-net/en/)
-- [Postman Collection](collections/mysql.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/mysql.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Getting Started](https://dev.mysql.com/doc/mysql-getting-started/en/)
+- [Website](https://mysql.com)
 - [Documentation](https://dev.mysql.com/doc/)
-- [Downloads](https://dev.mysql.com/downloads/)
-- [Community](https://www.mysql.com/community/)
+- [Getting started](https://dev.mysql.com/doc/mysql-getting-started/en/)
 - [Blog](https://blogs.oracle.com/mysql/)
-- [GitHub Organization](https://github.com/mysql)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/mysql)
-- [Terms of Service](https://www.mysql.com/about/legal/)
-- [Privacy Policy](https://www.oracle.com/legal/privacy/)
+- [Terms of service](https://www.mysql.com/about/legal/)
+- [Privacy policy](https://www.oracle.com/legal/privacy/)
+- [GitHub](https://github.com/mysql)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 36.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mysql/](https://apis.io/providers/mysql/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MySQL: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mysql/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
